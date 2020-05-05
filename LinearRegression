@@ -1,0 +1,20 @@
+load('police');
+p=police(:,1)
+crime=police(:,2)
+misconduct=police(:,6)
+figure(1);plot(p,crime,'r')
+xlabel('Police Precinct')
+ylabel('Number Reported')
+legend('Major Felony', 'r')
+print-dpng('Crime.png')
+figure(2);plot(p,misconduct,'b')
+xlabel('Police Precinct')
+ylabel('Number Reported')
+legend('Police Misconduct','b')
+print-dpng('Misconduct.png')
+scatter(crime,misconduct)
+C=[ones(23,1) c]
+theta=(pinv(C'*C))*C'*m
+hold on;
+plot(C(:,2),C*theta,'-')
+legend('Linear Regression')
