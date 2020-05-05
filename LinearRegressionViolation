@@ -1,0 +1,14 @@
+x=police(:,5);
+y=police(:,6);
+scatter(x,y)
+figure(4);scatter(x,y)
+theta=(pinv(C'*C))*C'*m
+hold on;
+plot(C(:,2),C*theta,'-')
+legend('Linear Regression')
+xlabel('Police Misconduct')
+ylabel('Civilian Violations')
+legend('-','Linear Regression')
+%theta:
+%  6.4304e+01
+   3.3467e-04
