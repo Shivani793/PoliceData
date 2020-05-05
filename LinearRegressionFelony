@@ -18,3 +18,7 @@ theta=(pinv(C'*C))*C'*m
 hold on;
 plot(C(:,2),C*theta,'-')
 legend('Linear Regression')
+%theta =
+
+ % -5.847720
+ % 0.057891
